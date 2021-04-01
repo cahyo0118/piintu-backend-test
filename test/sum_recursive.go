@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math"
-	_ "math"
 )
 
 var nodes []int = []int{}
