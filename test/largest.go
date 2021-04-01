@@ -5,14 +5,16 @@ import (
 	"strconv"
 )
 
-func largest(numbers []int64) string {
+func largest(numbers []int64) int {
 	string_concatenating := ""
 
 	for _, n := range numbers {
 		string_concatenating += strconv.Itoa(int(n))
 	}
 
-	return string_concatenating
+	v, _ := strconv.ParseInt(string_concatenating, 10, 32)
+
+	return int(v)
 }
 
 func main() {
